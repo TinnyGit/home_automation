@@ -1,7 +1,7 @@
 		var mqtt;
 		var reconnectTimeout = 2000;
-		var host="192.168.1.106"; //change this
-		var port=9001;
+		var host="xxx.xxx.x.xxx"; //change this
+		var port=xxxx;
 	
 		function update(flag) {
 			message = new Paho.MQTT.Message(flag);
