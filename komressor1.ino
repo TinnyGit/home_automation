@@ -12,7 +12,6 @@ String duration;
 #define RELAY_CH3 7
 #define RELAY_CH4 8
 
-
 // Update these with values suitable for your network.
 byte mac[]    = {  0xDE, 0xED, 0xBA, 0xFE, 0xFE, 0xED };
 IPAddress ip(192,168,1,178);
@@ -57,8 +56,6 @@ void setup()
 {
   Serial.begin(57600);
 
-//  pinMode(led, OUTPUT);
-
   client.setServer(server, 1883);
   client.setCallback(callback);
 
@@ -66,8 +63,7 @@ void setup()
   // Allow the hardware to sort itself out
   delay(1500);
 
-  //analogReference(INTERNAL1V1); // Use built-in 1.1V reference
-
+  //initialize relays to low
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(RELAY_CH1, OUTPUT);
   digitalWrite(RELAY_CH1, LOW);  // switch off Relay1
