@@ -14,8 +14,8 @@ String duration;
 
 // Update these with values suitable for your network.
 byte mac[]    = {  0xDE, 0xED, 0xBA, 0xFE, 0xFE, 0xED };
-IPAddress ip(192,168,1,178);
-IPAddress server(192,168,1,106);
+IPAddress ip(x,x,x,x);
+IPAddress server(x,x,x,x);
 
 EthernetClient ethClient;
 PubSubClient client(ethClient);
